@@ -1,18 +1,19 @@
 # Lab-Computational-biology-Reseach
 Build ML pipeline of genomics data and reactive website to display
 
-## Overview
-This analysis platform include three main functions: Visualization, Genetic Anlaysis and Machine learning. 
+## Machine learning pipeline
+1. Pre-process dataset by filtering and transposing.
+2. Transform nodes into vectors with node2vec(https://snap.stanford.edu/node2vec/)
+3. Classify genes with ML models including XGBoost, random forest, linear reression and deep learning models. Tuned hyper parameter and validated classification with cross validation.
 
-## Methods
-#### Visualization based on Igraph and VisNet(R)
+## Website overview
+This analysis platform include two main functions: Visualization and Genetic Anlaysis.
+
+#### Network visualization based on Igraph and VisNet(R)
 Visualize genomics edgelists with igraph and visNet. The framework enables adjusting threshold of edges shown, and choose cells to display.
-#### Genetic Anlysis: Computational simulation with R
-1. Calculate centrality degree with chosen centrality measure.
-2. Enrichment analysis with chosen enrichment method.(Based on filtered data)
-#### Machine Learning: node2vec with embedding ML
-1. Transform nodes into vectors with node2vec(https://snap.stanford.edu/node2vec/)
-2. Classify genes with ML models with embeddings. This combined XGBoost, random forest, linear reression and deep learning models with grid-search CV.
+#### Genetic Anlysis: interactive simulation with R
+1. Calculate centrality degree with chosen centrality measure methods.
+2. Enrichment analysis with chosen enrichment methods.(Based on filtered data)
 
 ## Demo
 ![UI Overview](https://user-images.githubusercontent.com/65391883/119729599-75488680-be3a-11eb-80ac-faffcf5abc37.png)
